@@ -78,10 +78,10 @@ Test a given training checkpoint:
 <!-- Download trained models and put them under `logs/` folder. -->
 ```bash
 python -m torch.distributed.run --nproc_per_node=$GPUs$ test.py \
-    --datapath $PATH_TO_YOUR_DATA$ \
-    --benchmark {coco, pascal, fss}  \
-    --fold {0, 1, 2, 3}
-    --logpath $PATH_TO_YOUR_MODEL$
+       --datapath $PATH_TO_YOUR_DATA$ \
+       --benchmark {coco, pascal, fss}  \
+       --fold {0, 1, 2, 3}
+       --logpath $PATH_TO_YOUR_MODEL$
 ```
 
 
